@@ -1,0 +1,23 @@
+{
+  "name": "webdriverio-basic",
+  "description": "WebDriver Framework with Node.js, Mocha & Chai",
+  "author": "Muhammad Salman Raza",
+  "type": "module",
+  "devDependencies": {
+    "@wdio/cli": "^8.16.6",
+    "@wdio/local-runner": "^8.16.6",
+    "@wdio/mocha-framework": "^8.16.3",
+    "@wdio/spec-reporter": "^8.16.3"
+  },
+  "scripts": {
+    "wdio": "wdio run ./wdio.conf.js",
+    "login:suite": "wdio run ./wdio.conf.js --suite login",
+    "login:spec": "wdio run ./wdio.conf.js --spec ./test/specs/login/login.spec.js",
+    "example1Table:spec": "wdio run ./wdio.conf.js --spec ./test/specs/tables/example1Table.spec.js",
+    "hovers:spec": "wdio run ./wdio.conf.js --spec ./test/specs/hovers/hovers.spec.js"
+  },
+  "dependencies": {
+    "@wdio/globals": "^8.16.6",
+    "chai": "^4.3.8"
+  }
+}
